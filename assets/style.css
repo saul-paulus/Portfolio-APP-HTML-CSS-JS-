@@ -1,0 +1,354 @@
+/* font */
+
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@400;500;600&family=Poppins:wght@400;500;600&family=Quicksand:wght@300;400;500;600&family=Raleway:wght@300;400;500&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap');
+
+/* Base */
+
+:root {
+    --header-height: 56px;
+    /* color */
+    /*Color mode HSL*/
+    --color-hue: 120;
+    --primary-color: hsl(var(--color-hue), 76%, 33%);
+    --primary-color-one: hsl(var(--color-hue), 6%, 19%);
+    --primary-color-two: hsl(var(--color-hue), 6%, 14%);
+    --title-color: hsl(var(--color-hue), 0%, 100%);
+    --text-color: hsl(var(--color-hue), 3%, 51%);
+    --body-color: var(--primary-color-one);
+    --container-color: var(--primary-color-two);
+    /* Font and typography*/
+    /* 
+        conver font:
+        cek web: https://type-scale.com/ 
+        1rem=16px, 1.5rem = 24px...
+    */
+    --body-font: 'Roboto Condensed', sans-serif;
+    --bigt-font-size: 2.87rem;
+    --h1-font-size: 2rem;
+    --h2-font-size: 1.41rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: 1.25rem;
+    --small-font-size: 0.70rem;
+    --smaller-font-size: 0.50rem;
+    /*Font weight*/
+    --font-reguler: 300;
+    --font-semi-bold: 500;
+    --font-bold: 700;
+    /*Margin*/
+    /* 8px = .5rem, 16px = 1rem , 68px = 4.25rem*/
+    --m-0-25: 0.25rem;
+    --m-0-5: 0.5rem;
+    --m-0-75: 0.75rem;
+    --m-1: 1rem;
+    --m-1-5: 1.5rem;
+    --m-2: 2rem;
+    --m-2-5: 2.5rem;
+    --m-3: 3rem;
+    /*z index*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-modal: 1000;
+}
+
+
+/* Css reset */
+
+a {
+    text-decoration: none;
+}
+
+menu,
+ol,
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+textarea {
+    white-space: revert;
+}
+
+::placeholder {
+    color: unset;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* styling */
+
+body {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--primary-color-two);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--title-color);
+    font-weight: var(--font-semi-bold);
+}
+
+
+/* style container */
+
+.main {
+    overflow: hidden;
+}
+
+.section {
+    padding: 4.5rem 0 1rem;
+}
+
+.section__title {
+    font-size: var(--h2-font-size);
+    margin-bottom: var(--m-2-5);
+    text-align: center;
+}
+
+
+/*Layout component*/
+
+.container-margin {
+    margin-left: var(--m-1-5);
+    margin-right: var(--m-1-5);
+}
+
+.container-layout {
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 100%;
+    column-gap: 2rem;
+}
+
+.button {
+    font-size: var(--h2-font-size);
+    color: var(--primary-color);
+    font-style: italic;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0.5rem 1.2rem;
+    text-decoration: underline;
+    transition: .3s;
+}
+
+.button:hover {
+    color: var(--text-color);
+}
+
+
+/* Nav-logo */
+
+.nav__logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.50rem;
+    font-weight: var(--font-bold);
+}
+
+.nav__logo-frist {
+    color: var(--title-color);
+}
+
+.nav__logo-last {
+    color: var(--primary-color);
+}
+
+
+/* Nav burger-menu */
+
+.nav__burger span {
+    display: block;
+    width: 28px;
+    height: 2px;
+    border-radius: 99999px;
+    background-color: var(--primary-color);
+    z-index: var(--z-modal);
+}
+
+.nav__burger span:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+
+/* header  */
+
+.header {
+    width: 100%;
+    background-color: var(--primary-color-two);
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: var(--z-fixed);
+}
+
+.nav {
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__menu {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color-two);
+    width: 100%;
+    padding: 3.5rem;
+    transition: 0.7s;
+}
+
+.nav__item {
+    margin: var(--m-2-5);
+}
+
+.nav__link {
+    color: var(--primary-color);
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-semi-bold);
+}
+
+.nav__link:hover {
+    text-decoration: underline;
+}
+
+
+/* Open menu */
+
+.open {
+    top: 0;
+}
+
+
+/* Nav menu */
+
+@media screen and (max-width: 768px) {
+     :root {
+        --bigt-font-size: 2.5rem;
+        --h1-font-size: 2rem;
+        --h2-font-size: 1.2rem;
+        --h3-font-size: 1rem;
+        --normal-font-size: 1.2rem;
+        --small-font-size: 0.50rem;
+        --smaller-font-size: 0.10rem;
+    }
+}
+
+
+/* font size for Large devices (desktops, 992px and up)*/
+
+@media screen and (min-width: 992px) {
+     :root {
+        --bigt-font-size: 3rem;
+        --h1-font-size: 2.5rem;
+        --h2-font-size: 1.7rem;
+        --h3-font-size: 1.5rem;
+        --normal-font-size: 1.7rem;
+        --small-font-size: 0.87rem;
+        --smaller-font-size: 0.67rem;
+    }
+}
+
+
+/* Style for Home */
+
+.home {}
+
+.home__container {
+    margin-top: 5rem;
+}
+
+.home__avatar {
+    padding: var(--m-2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home__avatar-img {
+    display: block;
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    margin-bottom: var(--m-0-75);
+}
+
+.home__avatar-title {
+    font-size: var(--bigt-font-size);
+    font-weight: var(--font-bold);
+    color: var(--title-color);
+}
+
+.home__avatar-skill {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.home__avatar-skill div {
+    color: var(--primary-color);
+    font-size: var(--m-1);
+    font-weight: var(--font-semi-bold);
+}
+
+.home__avatar-sosmed {
+    display: flex;
+    width: 10rem;
+    justify-content: space-between;
+}
+
+.home__avatar-sosmed a {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+}
+
+.home__download {
+    text-align: center;
+    margin-bottom: var(--m-2-5);
+}
+
+.home__data {}
+
+.home__data h1 {
+    font-weight: var(--font-semi-bold);
+    font-size: var(--m-1-5);
+    margin-bottom: var(--m-1);
+}
+
+.home__data p {
+    text-align: justify;
+    font-weight: var(--font-reguler);
+    font-size: 1.3rem;
+}
+
+.home__letChat {
+    text-align: center;
+    margin: var(--m-2);
+}
