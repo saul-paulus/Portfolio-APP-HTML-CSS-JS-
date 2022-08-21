@@ -218,6 +218,21 @@ section {
     color: var(--primary-color);
 }
 
+.icon__sosmed a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color-one);
+    padding: 15px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 10px;
+    color: var(--primary-color);
+    font-size: var(--m-2-5);
+    overflow: hidden;
+}
+
 
 /* header  */
 
@@ -351,13 +366,7 @@ section {
 
 .home__avatar-sosmed {
     display: flex;
-    width: 10rem;
     justify-content: space-between;
-}
-
-.home__avatar-sosmed a {
-    font-size: 2.5rem;
-    color: var(--primary-color);
 }
 
 .home__download {
