@@ -180,6 +180,9 @@ section {
     color: var(--text-color);
 }
 
+
+/* Membuat card */
+
 .card {
     display: flex;
     justify-content: space-between;
@@ -190,32 +193,21 @@ section {
     border-radius: 5px;
 }
 
-.card__header {
-    margin-top: var(--m-1);
-    margin-bottom: var(--m-1);
-}
-
 .card__title {
     font-weight: var(--font-semi-bold);
 }
 
 .card__description {
     font-weight: var(--font-reguler);
-    font-size: var(--small-font-size);
+    font-size: var(--smaller-font-size);
     text-align: justify;
 }
 
 .card__details {
-    font-size: var(--small-font-size);
-    font-weight: var(--font-semi-bold);
-    margin-top: var(--m-3);
-}
-
-.card__avatar {
     padding: var(--m-1);
-    display: inline-block;
-    font-size: 6.5rem;
     color: var(--primary-color);
+    font-size: var(--normal-font-size);
+    text-align: center;
 }
 
 .icon__sosmed a {
@@ -406,6 +398,7 @@ section {
     text-align: justify;
     font-size: var(--normal-font-size);
     font-weight: var(--font-reguler);
+    color: var(--text-color);
 }
 
 .about__title {
@@ -428,3 +421,127 @@ section {
 }
 
 .about__img-picture {}
+
+
+/* style skill */
+
+.skill__content {
+    margin-top: var(--m-8);
+}
+
+.skill__card {
+    background-color: var(--primary-color-one);
+    padding: var(--m-1);
+    border-radius: 5px;
+    margin-bottom: var(--m-3);
+}
+
+.skill__card-data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skill__card-data i {
+    display: inline-block;
+    font-size: var(--m-2);
+    color: var(--primary-color);
+}
+
+.skill__card-header {
+    text-align: center;
+}
+
+.skill__card-header p {
+    font-size: var(--smaller-font-size);
+}
+
+.skill__data {
+    margin: var(--m-2) 0 var(--m-2-5) 0;
+}
+
+.skill__data-title h3,
+.skill__data-title p {
+    font-size: var(--m-1);
+}
+
+.skill__data-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skill__name,
+.skill__percentage {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-semi-bold);
+}
+
+.skill__bar {
+    display: block;
+    width: 100%;
+    height: var(--m-0-5);
+    display: flex;
+    align-items: center;
+    background-color: var(--primary-color-two);
+}
+
+.skill__bar-percent {
+    display: block;
+    height: var(--m-0-5);
+    background-color: var(--primary-color);
+}
+
+.skill__figma,
+.skill__html {
+    width: 80%;
+}
+
+.skill__css {
+    width: 85%;
+}
+
+.skill__webpack,
+.skill__golang,
+.skill__php,
+.skill__nodejs,
+.skill__mongodb {
+    width: 60%;
+}
+
+.skill__adobePhoto,
+.skill__mysql {
+    width: 70%;
+}
+
+.skill__adobeXd,
+.skill__js,
+.skill_boostrap {
+    width: 75%;
+}
+
+.skill__reactjs {
+    width: 50%;
+}
+
+.skills__list {
+    transition: .4s;
+}
+
+.skill__close .skills__list {
+    height: 0;
+    overflow: hidden;
+}
+
+.skills__open .skills__list {
+    height: max-content;
+    transform: rotateY(-60deg);
+}
+
+.skill__details {
+    transition: .4s;
+}
+
+.skill__open .skill__details {
+    transform: rotate(-180deg);
+}
