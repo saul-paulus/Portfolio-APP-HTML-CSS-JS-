@@ -579,3 +579,35 @@ section {
     font-weight: var(--font-reguler);
     font-size: var(--small-font-size);
 }
+
+.service__contact {
+    background-color: var(--primary-color-one);
+}
+
+.service__contact-cntainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service__contact-header {
+    margin-top: var(--m-3);
+}
+
+.service__contact-title {
+    font-size: var(--m-2);
+    font-weight: var(--font-semi-bold);
+    text-align: center;
+}
+
+.service__contact__subtitle {
+    margin-top: var(--m-1);
+    color: var(--title-color);
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-reguler);
+}
+
+.service__contact-link {
+    text-align: center;
+    margin: var(--m-3) 0 var(--m-3) 0;
+}
