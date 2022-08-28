@@ -16,6 +16,7 @@
     --text-color: hsl(var(--color-hue), 3%, 51%);
     --body-color: var(--primary-color-one);
     --container-color: var(--primary-color-two);
+    --transparancy-color: hsl(var(--color-hue), 76%, 51%, .4);
     /* Font and typography*/
     /* 
         conver font:
@@ -129,7 +130,7 @@ h3 {
     overflow: hidden;
 }
 
-section {
+.section {
     margin-top: var(--m-8);
     margin-bottom: var(--header-height);
 }
@@ -137,6 +138,10 @@ section {
 
 /* section__title atau section__subtitle dibuat untuk membuat style secara global yang menunjukan sebuah 
     title atau judul section/topik */
+
+.section__header {
+    margin-bottom: var(--m-3);
+}
 
 .section__title {
     font-weight: var(--font-bold);
@@ -149,6 +154,12 @@ section {
     text-align: center;
     font-size: var(--small-font-size);
     margin-top: -5px;
+}
+
+.section__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
@@ -187,14 +198,31 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 5px;
     background-color: var(--primary-color-two);
-    margin: var(--m-2) 0 var(--m-2) 0;
+    margin: var(--m-1) 0 var(--m-1) 0;
     border-radius: 5px;
+}
+
+.card__header {
+    text-align: center;
+    margin: var(--m-1) 0 var(--m-1) 0;
+}
+
+.card__footer {
+    text-align: center;
+    margin-top: var(--m-1-5);
 }
 
 .card__title {
     font-weight: var(--font-semi-bold);
+    font-size: var(--normal-font-size);
+}
+
+.card__subtitle {
+    font-weight: var(--font-reguler);
+    font-size: var(--small-font-size);
+    font-weight: var(--font-reguler);
 }
 
 .card__description {
@@ -401,10 +429,6 @@ section {
     color: var(--text-color);
 }
 
-.about__title {
-    margin-bottom: var(--m-3);
-}
-
 .about__data {
     background-color: var(--primary-color-one);
     padding-bottom: var(--m-8);
@@ -424,11 +448,6 @@ section {
 
 
 /* style skill */
-
-.skill__container,
-.service__container {
-    margin-top: var(--m-8);
-}
 
 .skill__card {
     background-color: var(--primary-color-one);
@@ -610,4 +629,57 @@ section {
 .service__contact-link {
     text-align: center;
     margin: var(--m-3) 0 var(--m-3) 0;
+}
+
+
+/* Style work */
+
+.work__card {
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    top: 0;
+    width: 15rem;
+    height: 15rem;
+    border-radius: .5rem;
+    padding: 0;
+}
+
+.work__card-img {
+    width: 100%;
+    height: 100%;
+    border-radius: .5rem;
+}
+
+.card__container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    bottom: -100%;
+    justify-content: center;
+    border-radius: .5rem;
+    transition: .3s;
+    background: var(--transparancy-color);
+    padding: 5px;
+}
+
+.work__card-link {
+    font-size: var(--bigt-font-size);
+    color: var(--primary-color-two);
+}
+
+.card__header {
+    margin-top: var(--m-1);
+}
+
+.work__title,
+.work__subtitle {
+    color: var(--title-color);
+}
+
+.work__card:hover .card__container {
+    bottom: 0 !important;
 }
