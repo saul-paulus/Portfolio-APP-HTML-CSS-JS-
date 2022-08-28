@@ -157,9 +157,12 @@ h3 {
 }
 
 .section__container {
+    margin-top: 4rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
 
@@ -682,4 +685,74 @@ h3 {
 
 .work__card:hover .card__container {
     bottom: 0 !important;
+}
+
+
+/* Style for contact */
+
+.contact__info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact__info {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+}
+
+.contact__info i {
+    color: var(--primary-color);
+    font-size: var(--m-2);
+}
+
+.contact__info p {
+    color: var(--text-color);
+    font-size: var(--normal-font-size);
+    padding: 5px;
+}
+
+.contact__message {
+    margin-top: var(--m-3);
+}
+
+.contact__message-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.message-input {
+    width: 100%;
+    padding: var(--m-1);
+    outline: none;
+    border: none;
+    background-color: var(--primary-color-one);
+    color: var(--primary-color);
+    margin: var(--m-0-5) 0 var(--m-0-5) 0;
+    font-size: var(--small-font-size);
+    border-radius: 5px;
+}
+
+.contact__button {
+    width: 70%;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-size: var(--small-font-size);
+    font-weight: var(--font-semi-bold);
+    background-color: var(--primary-color-one);
+    color: var(--primary-color);
+    cursor: pointer;
+    margin-top: var(--m-2);
+    text-decoration: none;
+}
+
+.contact__button:hover {
+    color: var(--primary-color-one);
+    background-color: var(--primary-color);
 }
