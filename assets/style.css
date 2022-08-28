@@ -640,8 +640,8 @@ h3 {
     position: relative;
     overflow: hidden;
     top: 0;
-    width: 15rem;
-    height: 15rem;
+    width: 80%;
+    height: 80%;
     border-radius: .5rem;
     padding: 0;
 }
