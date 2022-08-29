@@ -304,13 +304,24 @@ h3 {
 }
 
 .nav__link {
-    color: var(--primary-color-two);
+    color: var(--primary-color-three);
     font-size: var(--normal-font-size);
     font-weight: var(--font-semi-bold);
 }
 
 .nav__link:hover {
-    text-decoration: underline;
+    color: var(--primary-color);
+}
+
+.nav__close {
+    top: var(--m-0-5);
+    left: var(--m-1-5);
+    position: absolute;
+    color: var(--primary-color-three);
+}
+
+.nav__close i {
+    font-size: var(--bigt-font-size);
 }
 
 
