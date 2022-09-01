@@ -27,7 +27,7 @@
     --h1-font-size: 2.2rem;
     --h2-font-size: 1.7rem;
     --h3-font-size: 1.5rem;
-    --normal-font-size: 1.30rem;
+    --normal-font-size: 1.20rem;
     --small-font-size: 1.10rem;
     --smaller-font-size: 0.90rem;
     /*Font weight*/
@@ -312,12 +312,6 @@ h3 {
 }
 
 .nav__lists {
-    /*
-   
-    width: 100%;
-   
-    z-index: -9;
-    height: 100vh; */
     position: absolute;
     display: none;
     flex-direction: column;
@@ -830,15 +824,15 @@ h3 {
 
 @media (min-width: 768px) {
      :root {
-        --header-height: 20px;
+        --header-height: 70px;
         --bigt-font-size: 2.9rem;
         --h1-font-size: 2.4rem;
         --h2-font-size: 1.9rem;
         --h3-font-size: 1.7rem;
         /* diturunkan */
         --normal-font-size: 1.20rem;
-        --small-font-size: 1.12rem;
-        --smaller-font-size: 1.01rem;
+        --small-font-size: 1rem;
+        --smaller-font-size: 0.80rem;
         /* 8px = .5rem, 16px = 1rem , 68px = 4.25rem*/
         --m-0-25: 0.27rem;
         --m-0-5: 0.7rem;
@@ -858,6 +852,9 @@ h3 {
     /* style container */
     .section {
         padding-top: var(--m-3);
+    }
+    .button {
+        padding: var(--m-0-5) var(--m-1);
     }
     /* header  */
     .nav {
@@ -900,7 +897,7 @@ h3 {
     .nav__link {
         color: var(--primary-color-three);
         font-size: var(--normal-font-size);
-        font-weight: var(--font-semi-bold);
+        font-weight: var(--font-reguler);
     }
     /* Style for Home */
     .home__container {
