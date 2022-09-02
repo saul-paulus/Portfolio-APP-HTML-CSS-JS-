@@ -133,11 +133,6 @@ h3 {
     margin-right: var(--m-1-5);
 }
 
-.grid {
-    display: grid;
-    gap: 1.2rem;
-}
-
 .button {
     text-align: center;
     font-size: var(--small-font-size);
@@ -187,6 +182,11 @@ h3 {
     align-items: center;
     justify-content: center;
     width: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-gap: var(--m-1);
 }
 
 
@@ -356,14 +356,13 @@ h3 {
 /* Style for Home */
 
 .home__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: var(--m-3);
+    grid-template-areas: 'home__avatar' 'home__data';
+    row-gap: var(--m-2);
 }
 
 .home__avatar {
+    border: 1px solid red;
+    grid-area: home__avatar;
     padding: var(--m-2);
     display: flex;
     flex-direction: column;
@@ -387,9 +386,8 @@ h3 {
 .home__avatar-skill {
     width: 100%;
     display: flex;
-    justify-content: space-around;
-    text-align: center;
-    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     margin-top: -1rem;
 }
 
@@ -397,6 +395,7 @@ h3 {
     color: var(--primary-color);
     font-size: var(--small-font-size);
     font-weight: var(--font-light);
+    margin: 0 var(--m-0-5);
 }
 
 .home__avatar-img,
@@ -431,7 +430,11 @@ h3 {
 }
 
 .home__data {
-    margin-top: var(--header-height);
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: home__data;
 }
 
 .home__data-title {
@@ -447,7 +450,7 @@ h3 {
 }
 
 .home__avatar-chat {
-    margin-top: var(--m-3);
+    margin-top: var(--m-2);
 }
 
 
@@ -853,9 +856,6 @@ h3 {
     .section {
         padding-top: var(--m-3);
     }
-    .button {
-        padding: var(--m-0-5) var(--m-1);
-    }
     /* header  */
     .nav {
         display: flex;
@@ -898,87 +898,6 @@ h3 {
         color: var(--primary-color-three);
         font-size: var(--normal-font-size);
         font-weight: var(--font-reguler);
-    }
-    /* Style for Home */
-    .home__container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-top: var(--m-3);
-    }
-    .home__avatar {
-        padding: var(--m-2);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .home__avatar-img {
-        display: block;
-        width: 240px;
-        height: 240px;
-        border-radius: 50%;
-        margin-bottom: var(--m-0-75);
-    }
-    .home__avatar-title {
-        font-size: var(--bigt-font-size);
-        font-weight: var(--font-bold);
-        color: var(--text-color);
-    }
-    .home__avatar-skill {
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-        text-align: center;
-        flex-wrap: wrap;
-        margin-top: -1rem;
-    }
-    .home__avatar-skill p {
-        color: var(--primary-color);
-        font-size: var(--small-font-size);
-        font-weight: var(--font-light);
-    }
-    .home__avatar-img,
-    .home__avatar-sosmed a {
-        background-color: var(--primary-color-two);
-    }
-    .home__avatar-title,
-    .home__avatar-sosmed a {
-        color: var(--text-color);
-    }
-    .home__avatar-sosmed {
-        display: flex;
-        justify-content: space-between;
-    }
-    .home__avatar-sosmed a {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 60px;
-        height: 60px;
-        border-radius: 50%;
-        margin: 10px;
-        font-size: var(--m-2-5);
-        overflow: hidden;
-    }
-    .home__avatar-download {
-        margin-top: var(--m-0-5);
-    }
-    .home__data {
-        margin-top: var(--header-height);
-    }
-    .home__data-title {
-        font-weight: var(--font-semi-bold);
-        color: var(--text-color);
-    }
-    .home__data-description {
-        color: var(--primary-color);
-        text-align: justify;
-        font-weight: var(--font-reguler);
-        font-size: var(--normal-font-size);
-    }
-    .home__avatar-chat {
-        margin-top: var(--m-3);
     }
 }
 
