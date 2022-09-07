@@ -29,7 +29,7 @@
     --h1-font-size: 2.1rem;
     --h2-font-size: 1.6rem;
     --h3-font-size: 1.35rem;
-    --bigt-font-size: 2.1rem;
+    --bigt-font-size: 2.78rem;
     --normal-font-size: 1.038rem;
     --small-font-size: .913rem;
     --smaller-font-size: .805rem;
@@ -136,14 +136,49 @@ h3 {
     margin-right: var(--m-1-5);
 }
 
+
+/* Styling button */
+
 .button {
-    text-align: center;
-    font-size: var(--small-font-size);
-    color: var(--primary-color-three);
+    align-items: center;
+    appearance: none;
+    background-color: #3EB2FD;
+    background-image: linear-gradient(1deg, var(--title-color), #149BF3 99%);
+    background-size: calc(100% + 20px) calc(100% + 20px);
+    border-radius: 100px;
+    border-width: 0;
+    box-shadow: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
     cursor: pointer;
-    padding: var(--m-0-75) var(--m-1-5);
-    border-radius: var(--m-8);
-    background-color: var(--title-color);
+    display: inline-flex;
+    font-size: var(--small-font-size);
+    height: auto;
+    justify-content: center;
+    line-height: 1.5;
+    padding: 6px 20px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color .2s, background-position .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: top;
+    white-space: nowrap;
+}
+
+.button:active,
+.button:focus {
+    outline: none;
+}
+
+.button:hover {
+    background-position: -20px -20px;
+}
+
+.button:focus:not(:active) {
+    box-shadow: rgba(40, 170, 255, 0.25) 0 0 0 .125em;
 }
 
 
@@ -288,6 +323,7 @@ h3 {
 
 .nav__item {
     margin: var(--m-1);
+    font-size: var(--normal-font-size);
 }
 
 .nav__link {
@@ -361,6 +397,7 @@ h3 {
 }
 
 .home__avatar-title {
+    font-size: var(--bigt-font-size);
     font-weight: var(--font-bold);
     color: var(--text-color);
 }
@@ -383,6 +420,7 @@ h3 {
 .home__avatar-img,
 .home__avatar-sosmed a {
     background-color: var(--primary-color-two);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 .home__avatar-title,
@@ -408,7 +446,7 @@ h3 {
 }
 
 .home__avatar-download {
-    margin-top: var(--m-0-5);
+    margin-top: var(--m-2-5);
 }
 
 .home__data {
@@ -961,7 +999,11 @@ h3 {
     }
     /* style container */
     .section {
-        padding-top: var(--m-3);
+        padding-top: var(--m-8);
+    }
+    /* Styling home */
+    .home__container {
+        margin-top: var(--m-8);
     }
     /* Style About */
     .about__img-picture {
@@ -1017,13 +1059,13 @@ h3 {
 @media (min-width: 1200px) {
     /* Base */
      :root {
-        --h1-font-size: 2.1rem;
-        --h2-font-size: 1.6rem;
-        --h3-font-size: 1.35rem;
-        --bigt-font-size: 2.1rem;
-        --normal-font-size: 1.038rem;
-        --small-font-size: .913rem;
-        --smaller-font-size: .805rem;
+        --h1-font-size: 2.5rem;
+        --h2-font-size: 2.1rem;
+        --h3-font-size: 1.55rem;
+        --bigt-font-size: 3.634rem;
+        --normal-font-size: 1.538rem;
+        --small-font-size: 1.313rem;
+        --smaller-font-size: 1.105rem;
     }
     .container-margin {
         margin-left: 10rem;
@@ -1043,6 +1085,10 @@ h3 {
     }
     .work__container {
         padding-bottom: 10rem;
+    }
+    /*styling  Contact */
+    .message-input {
+        font-size: var(--smaller-font-size);
     }
 }
 
