@@ -1003,7 +1003,7 @@ h3 {
     }
     /* Styling home */
     .home__container {
-        margin-top: var(--m-8);
+        margin-top: 4rem;
     }
     /* Style About */
     .about__img-picture {
