@@ -7,7 +7,4 @@ Sebelum membuat app tersebut, saya mendesain UI dengan menggunakan figma. untuk 
  
  
   Desain App oleh figma:
-  
-  ![Screenshot from 2022-08-30 00-45-28](https://user-images.githubusercontent.com/55346618/187241003-0623c437-f3ae-4241-93a6-4a2fb67f7df4.png)
-
- 
+![Screenshot from 2022-09-03 02-34-32](https://user-images.githubusercontent.com/55346618/188207710-aa4b6092-95a5-428c-8e94-0e275e82fbc3.png)
