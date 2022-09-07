@@ -1,0 +1,95 @@
+/* Responsive breakpoints */
+
+
+/* X-Small devices (portrait phones, less than 576px) */
+
+@media (max-width: 576px) {}
+
+
+/* Small devices (landscape phones, less than 768px) */
+
+@media (min-width: 768px) {
+     :root {
+        --h1-font-size: 2.5rem;
+        --h2-font-size: 2rem;
+        --h3-font-size: 1.8rem;
+        --bigt-font-size: 2.2rem;
+        --normal-font-size: 1.20rem;
+        --small-font-size: 1.10rem;
+        --smaller-font-size: 0.90rem;
+        --m-0-25: 0.25rem;
+        --m-0-5: 0.5rem;
+        --m-0-75: 0.75rem;
+        --m-1: 1rem;
+        --m-1-5: 1.5rem;
+        --m-2: 2rem;
+        --m-2-5: 2.5rem;
+        --m-3: 3rem;
+    }
+    .container-margin {
+        max-width: 100%;
+        margin-left: var(--m-3);
+        margin-right: var(--m-3);
+    }
+    /* style container */
+    .section {
+        padding-top: var(--m-3);
+    }
+    /* Style for Home */
+    .home__container {
+        margin-top: var(--m-1-5);
+    }
+    /* Style About */
+    .about__img img {
+        width: 70%;
+    }
+    .card {
+        flex-direction: column;
+        width: 40%;
+        height: auto;
+        margin: 10px;
+    }
+    .card__header {
+        text-align: center;
+    }
+}
+
+
+/* Medium devices (tablets, less than 992px) */
+
+@media (min-width: 992px) {
+     :root {
+        --height: 2rem;
+        --h1-font-size: 2.9rem;
+        --h2-font-size: 2.4rem;
+        --h3-font-size: 2.2rem;
+        --bigt-font-size: 2.6rem;
+        --normal-font-size: 1.69rem;
+        --small-font-size: 1.14rem;
+        --smaller-font-size: 1.12rem;
+        --m-0-25: 0.45rem;
+        --m-0-5: 0.7rem;
+        --m-0-75: 0.95rem;
+        --m-1: 1.2rem;
+        --m-1-5: 1.7rem;
+        --m-2: 2.2rem;
+        --m-2-5: 2.7rem;
+        --m-3: 3.2rem;
+        --m-8: 8rem;
+    }
+    /* style about  */
+    .about__img img {
+        width: 40%;
+    }
+    .card {
+        width: 30%;
+        height: 20rem;
+    }
+    /* ==========style skill =============== */
+    .skill__data-container {
+        flex-direction: row;
+    }
+    .skill__card {
+        margin: var(--m-2) 10px;
+    }
+}

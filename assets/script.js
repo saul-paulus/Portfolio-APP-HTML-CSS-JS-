@@ -1,6 +1,6 @@
 // Mengatifkan untuk fungsi open menu dan close menu 
 
-const navMenu = document.getElementById('nav-lists');
+const navMenu = document.getElementById('nav-menu');
 const navToggle = document.getElementById('nav-toggle');
 const garis1 = document.getElementById('garis1');
 const garis2 = document.getElementById('garis2');

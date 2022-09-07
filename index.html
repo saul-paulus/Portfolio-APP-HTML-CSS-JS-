@@ -16,7 +16,7 @@
 <body>
 
     <!-- Membuat header -->
-    <header class="header" id="header">
+    <header class="header " id="header">
         <nav class="nav container-margin">
             <div class="nav__toggle" id="nav-toggle">
                 <span class="garis1" id="garis1"></span>
@@ -25,26 +25,28 @@
             <a href="#" class="nav__logo" id="nav-logo">
                 <span class="nav__logo-frist">saul</span><span class="nav__logo-last">Paulus</span>
             </a>
-            <ul class="nav__lists" id="nav-lists">
-                <li class="nav__item">
-                    <a href="#home" class="nav__link active-link" id="nav-link">Home</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#about" class="nav__link" id="nav-link">About Me</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#skills" class="nav__link" id="nav-link">Skills</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#services" class="nav__link" id="nav-link">Services</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#work" class="nav__link" id="nav-link">Work</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#contact" class="nav__link" id="nav-link">Contact</a>
-                </li>
-            </ul>
+            <di class="nav__menu" id="nav-menu">
+                <ul class="nav__lists" id="nav-lists">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link" id="nav-link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link" id="nav-link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link" id="nav-link">Skills</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#services" class="nav__link" id="nav-link">Services</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#work" class="nav__link" id="nav-link">Work</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link" id="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </di>
         </nav>
     </header>
 
@@ -52,7 +54,7 @@
     <main clas class="main" id="main">
         <!-- Membuat content home -->
         <section class="home section" id="home">
-            <div class="home__container container-margin grid home__container">
+            <div class=" container-margin grid home__container">
                 <div class="home__avatar">
                     <img src="./assets/img/img-2.png" alt="img-personal" class="home__avatar-img">
                     <h1 class="home__avatar-title">Saul Paulus</h1>
@@ -76,57 +78,55 @@
                     <p class="home__data-description">
                         I'm a beginner to web design and don't have experience yet, I have a dream to become a fullstack web developer
                     </p>
-                    <a href="" class="button home__avatar-chat">Let's Chat</a>
-                </div>
 
+                    <div class="home__chat">
+                        <a href="" class="button home__avatar-chat">Let's Chat</a>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- Akhir membuat content home -->
 
         <!-- Membuat content About -->
         <section class="about section" id="about">
-            <div class="">
-                <div class="container-margin">
-                    <div class="section__header">
-                        <h1 class="section__title">About Me</h1>
-                        <p class="section__subtitle">My Introduction</p>
-                    </div>
-                    <div class="about__img">
-                        <img src="./assets/img/img-1.png" alt="" class="about__img-picture">
-                    </div>
+            <div class="grid about__container">
+                <div class="section__header">
+                    <h1 class="section__title">About Me</h1>
+                    <p class="section__subtitle">My Introduction</p>
+                </div>
+                <div class="about__img container-margin">
+                    <img src="./assets/img/img-1.png" alt="" class="about__img-picture">
                 </div>
                 <div class="about__data">
-                    <div class="container-margin">
-                        <div class="about__experience">
-                            <h2 class="about__experience-title">My Experience in Developer</h2>
-                            <div class="about__experience-container-card">
-                                <div class="card">
-                                    <div class="card__header">
-                                        <h3 class="card__title">Experience</h3>
-                                        <p class="card__description">
-                                            I have approximately 3 years of programming experiencez
-                                        </p>
-                                    </div>
-                                    <p class="card__details">6+ Years</p>
+                    <div class="container-margin about__data-container">
+                        <h3 class="about__experience-title">My Experience in Developer</h3>
+                        <div class="about__container-card">
+                            <div class="card">
+                                <div class="card__header">
+                                    <h3 class="card__title">Experience</h3>
+                                    <p class="card__description">
+                                        I have approximately 3 years of programming experiencez
+                                    </p>
                                 </div>
-                                <div class="card">
-                                    <div class="card__header">
-                                        <h3 class="card__title">Projects</h3>
-                                        <p class="card__description">
-                                            I have completed several projects, about 10 projects
-                                        </p>
-                                    </div>
-                                    <p class="card__details">10+ Projects</p>
+                                <p class="card__details">6+ Years</p>
+                            </div>
+                            <div class="card">
+                                <div class="card__header">
+                                    <h3 class="card__title">Projects</h3>
+                                    <p class="card__description">
+                                        I have completed several projects, about 10 projects
+                                    </p>
                                 </div>
-                                <div class="card">
-                                    <div class="card__header">
-                                        <h3 class="card__title">Company</h3>
-                                        <p class="card__description">
-                                            I have experience working in 2 and companies or institutions for 5 years
-                                        </p>
-                                    </div>
-                                    <p class="card__details">2+ Companies</p>
+                                <p class="card__details">10+ Projects</p>
+                            </div>
+                            <div class="card">
+                                <div class="card__header">
+                                    <h3 class="card__title">Company</h3>
+                                    <p class="card__description">
+                                        I have experience working in 2 and companies or institutions for 5 years
+                                    </p>
                                 </div>
+                                <p class="card__details">2+ Companies</p>
                             </div>
                         </div>
                     </div>
@@ -137,13 +137,13 @@
 
         <!-- Membuat content Skill -->
         <section class="skills section" id="skills">
-            <div class="container__layout container-margin  ">
+            <div class="container__layout container-margin skills__container grid">
                 <div class="section__header">
                     <h1 class="section__title">Skill</h1>
                     <p class="section__subtitle">My Tecknique Level</p>
                 </div>
 
-                <div class="skill__container">
+                <div class="skill__data-container">
                     <!-- Membuat skill design -->
                     <div class="skill__card skill__open">
                         <div class="skill__card-data">
@@ -185,7 +185,6 @@
                             </div>
                         </div>
                     </div>
-
                     <!-- Membuat skill frontend -->
                     <div class="skill__card skill__close">
                         <div class="skill__card-data">
@@ -253,7 +252,6 @@
                             </div>
                         </div>
                     </div>
-
                     <!-- Membuat skill backend -->
                     <div class="skill__card skill__close">
                         <div class="skill__card-data">
@@ -321,13 +319,13 @@
 
         <!-- Membuat content service -->
         <section class="service section" id="services">
-            <div class="container-margin">
+            <div class="service__container container-margin grid">
                 <div class="section__header service__header">
                     <h1 class="section__title">My Service</h1>
                     <p class="section__subtitle">What I Offer</p>
                 </div>
 
-                <div class="service__container">
+                <div class="service__content">
                     <div class="service__card">
                         <div class="service__card-data">
                             <div class="service__img">
@@ -365,15 +363,14 @@
             </div>
 
             <div class="service__contact ">
-                <div class="container-margin service__contact-cntainer">
+                <div class="container-margin service__contact-container">
                     <div class="service__contact-header">
                         <h3 class="section__title service__contact-title">You have new a project</h3>
                         <p class="section__subtitle service__contact__subtitle">Contact me now and ger a 20% discount on your new project</p>
+                        <a href="" class=" service__contact-link button">
+                            Contact me
+                        </a>
                     </div>
-                    <a href="" class=" service__contact-link button">
-                        Contact me
-                    </a>
-
                     <div class="service__contact-img">
                         <img src="./assets/img/img-1.png" alt="" class="about__img-picture">
                     </div>
@@ -384,13 +381,13 @@
 
         <!-- membuat content myWork  -->
         <section class="work section" id="work">
-            <div class="container-margin ">
+            <div class="container-margin grid work__container ">
                 <div class="section__header">
                     <h1 class="section__title">My Work</h1>
                     <p class="section__subtitle">Most Recent Work</p>
                 </div>
-                <div class="section__container">
-                    <div class="card work__card">
+                <div class="work__container-card">
+                    <div class="work__card">
                         <img src="./assets/img/portfolio-img/5.jpg" alt="" class="card-img work__card-img">
 
                         <div class="card__container">
@@ -402,7 +399,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card work__card">
+                    <div class="work__card">
                         <img src="./assets/img/portfolio-img/5.jpg" alt="" class="card-img work__card-img">
 
                         <div class="card__container">
@@ -414,7 +411,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card work__card">
+                    <div class="work__card">
                         <img src="./assets/img/portfolio-img/5.jpg" alt="" class="card-img work__card-img">
 
                         <div class="card__container">
@@ -426,7 +423,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card work__card">
+                    <div class="work__card">
                         <img src="./assets/img/portfolio-img/3.jpg" alt="" class="card-img work__card-img">
 
                         <div class="card__container">
@@ -438,7 +435,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card work__card">
+                    <div class="work__card">
                         <img src="./assets/img/portfolio-img/4.jpg" alt="" class="card-img work__card-img">
 
                         <div class="card__container">
@@ -457,12 +454,12 @@
 
         <!-- Mmbuat content contact -->
         <section class="section contact" id="contact">
-            <div class="container-margin">
+            <div class="container-margin contact__container grid">
                 <div class="section__header">
                     <h1 class="section__title">Contact me</h1>
                     <p class="section__subtitle">Get in Touch</p>
                 </div>
-                <div class="section__container">
+                <div class="contact__content">
                     <div class="contact__info-container">
                         <div class="card__contact-info button ">
                             <i class="uil uil-phone-alt"></i>
