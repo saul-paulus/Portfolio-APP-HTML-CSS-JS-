@@ -420,7 +420,6 @@ h3 {
 .home__avatar-img,
 .home__avatar-sosmed a {
     background-color: var(--primary-color-two);
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 .home__avatar-title,
@@ -443,6 +442,7 @@ h3 {
     margin: 10px;
     font-size: var(--m-2-5);
     overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 .home__avatar-download {
@@ -855,14 +855,14 @@ h3 {
 }
 
 .work__card-link {
-    font-size: var(--bigt-font-size);
+    font-size: var(--normal-font-size);
     font-weight: var(--font-bold);
     color: var(--title-color);
 }
 
 .work__title {
     font-weight: var(--font-bold);
-    font-size: var(--bigt-font-size);
+    font-size: var(--normal-font-size);
     color: var(--text-color);
 }
 
@@ -1001,10 +1001,6 @@ h3 {
     .section {
         padding-top: var(--m-8);
     }
-    /* Styling home */
-    .home__container {
-        margin-top: 4rem;
-    }
     /* Style About */
     .about__img-picture {
         width: 70%;
@@ -1063,9 +1059,9 @@ h3 {
         --h2-font-size: 2.1rem;
         --h3-font-size: 1.55rem;
         --bigt-font-size: 3.634rem;
-        --normal-font-size: 1.538rem;
-        --small-font-size: 1.313rem;
-        --smaller-font-size: 1.105rem;
+        --normal-font-size: 1.338rem;
+        --small-font-size: 1.213rem;
+        --smaller-font-size: 1.05rem;
     }
     .container-margin {
         margin-left: 10rem;
@@ -1083,9 +1079,9 @@ h3 {
     .service__contact-img img {
         width: 70%;
     }
-    .work__container {
+    /* .work__container {
         padding-bottom: 10rem;
-    }
+    } */
     /*styling  Contact */
     .message-input {
         font-size: var(--smaller-font-size);
