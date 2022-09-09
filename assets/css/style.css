@@ -916,7 +916,7 @@ h3 {
     font-size: var(--bigt-font-size);
 }
 
-.card__contact-info p {
+.card__contact-info a {
     color: var(--primary-color-three);
     font-size: var(--normal-font-size);
     margin-left: var(--m-1-5);
