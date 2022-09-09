@@ -243,7 +243,7 @@ h3 {
 .nav__logo {
     display: flex;
     justify-content: end;
-    font-size: var(--normal-font-size);
+    font-size: 1.7rem;
     font-weight: var(--font-bold);
 }
 
@@ -1025,6 +1025,12 @@ h3 {
     .skills__container {
         padding-bottom: var(--m-8);
     }
+    /* style service */
+    .service__card {
+        width: 45%;
+        height: 20rem;
+        margin: var(--m-0-5);
+    }
     /* Styling contact */
     .contact__content {
         width: 100%;
@@ -1039,17 +1045,17 @@ h3 {
 @media (min-width: 992px) {
     /* styling home */
     /* Styling about */
-    .about__img-picture {
-        width: 40%;
-    }
     .card {
         width: 30%;
         height: 20rem;
     }
-    /* ==========style skill =============== */
-    .service__card {
-        width: 45%;
-        margin: var(--m-1);
+    .service__contact-container {
+        padding-top: var(--m-8);
+        flex-direction: row;
+        justify-content: center;
+    }
+    .service__contact-img img {
+        width: 70%;
     }
 }
 
@@ -1067,25 +1073,10 @@ h3 {
         --small-font-size: 1.213rem;
         --smaller-font-size: 1.05rem;
     }
-    .container-margin {
-        margin-left: 10rem;
-        margin-right: 10rem;
-    }
-    /* Styling service */
-    .service__card {
-        width: 30%;
-    }
-    .service__contact-container {
-        padding-top: var(--m-8);
-        flex-direction: row;
-        justify-content: center;
-    }
+    /* styling service */
     .service__contact-img img {
-        width: 70%;
+        width: 90%;
     }
-    /* .work__container {
-        padding-bottom: 10rem;
-    } */
     /*styling  Contact */
     .message-input {
         font-size: var(--smaller-font-size);
@@ -1095,4 +1086,9 @@ h3 {
 
 /* X-Large devices (large desktops, less than 1400px) */
 
-@media (min-width: 1400px) {}
+@media (min-width: 1400px) {
+    .container-margin {
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+}
