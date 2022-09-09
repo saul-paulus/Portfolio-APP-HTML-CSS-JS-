@@ -243,7 +243,7 @@ h3 {
 .nav__logo {
     display: flex;
     justify-content: end;
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     font-weight: var(--font-bold);
 }
 
@@ -401,6 +401,7 @@ h3 {
     font-size: var(--bigt-font-size);
     font-weight: var(--font-bold);
     color: var(--text-color);
+    letter-spacing: -1px;
 }
 
 .home__avatar-skill {
@@ -510,6 +511,7 @@ h3 {
 }
 
 .about__data {
+    width: 100%;
     grid-area: about__data;
     background-color: var(--text-color);
     padding-bottom: var(--m-8);
@@ -538,7 +540,7 @@ h3 {
     align-items: center;
     padding: var(--m-1-5);
     background-color: var(--primary-color);
-    margin: 10px 0;
+    margin: 5px 0;
     border-radius: var(--m-0-5);
 }
 
@@ -911,13 +913,13 @@ h3 {
 
 .card__contact-info i {
     color: var(--primary-color-one);
-    font-size: var(--m-2);
+    font-size: var(--bigt-font-size);
 }
 
 .card__contact-info p {
     color: var(--primary-color-three);
     font-size: var(--normal-font-size);
-    padding: 5px;
+    margin-left: var(--m-1-5);
 }
 
 .contact__message {
@@ -938,18 +940,18 @@ h3 {
     background-color: var(--primary-color-one);
     color: var(--primary-color);
     margin: var(--m-0-5) 0 var(--m-0-5) 0;
-    font-size: var(--small-font-size);
     border-radius: 5px;
 }
 
-.contact__button {
-    width: 55%;
+.send__button {
+    width: max-content;
     text-align: center;
     outline: none;
     border: none;
     cursor: pointer;
-    margin-top: var(--m-2);
+    margin: var(--m-3) 0;
     text-decoration: none;
+    padding: var(--m-1) var(--m-2);
 }
 
 .contact__button:hover {
@@ -1007,7 +1009,7 @@ h3 {
     }
     /* Style About */
     .about__img-picture {
-        width: 70%;
+        width: 50%;
     }
     .card {
         flex-direction: column;
@@ -1063,15 +1065,9 @@ h3 {
 /* Large devices (desktops, less than 1200px) */
 
 @media (min-width: 1200px) {
-    /* Base */
-     :root {
-        --h1-font-size: 2.5rem;
-        --h2-font-size: 2.1rem;
-        --h3-font-size: 1.55rem;
-        --bigt-font-size: 3.634rem;
-        --normal-font-size: 1.338rem;
-        --small-font-size: 1.213rem;
-        --smaller-font-size: 1.05rem;
+    /* Style About */
+    .about__img-picture {
+        width: 40%;
     }
     /* styling service */
     .service__contact-img img {
@@ -1087,8 +1083,23 @@ h3 {
 /* X-Large devices (large desktops, less than 1400px) */
 
 @media (min-width: 1400px) {
+    /* Base */
+     :root {
+        --h1-font-size: 2.5rem;
+        --h2-font-size: 2.1rem;
+        --h3-font-size: 1.55rem;
+        --bigt-font-size: 3.634rem;
+        --normal-font-size: 1.338rem;
+        --small-font-size: 1.213rem;
+        --smaller-font-size: 1.05rem;
+    }
     .container-margin {
         margin-left: 10rem;
         margin-right: 10rem;
+    }
+    /* Styling home */
+    .home__avatar-img {
+        width: 260px;
+        height: 260px;
     }
 }
