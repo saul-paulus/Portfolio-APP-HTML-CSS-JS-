@@ -29,7 +29,7 @@
     --h1-font-size: 2.1rem;
     --h2-font-size: 1.6rem;
     --h3-font-size: 1.35rem;
-    --bigt-font-size: 2.78rem;
+    --bigt-font-size: 2.401rem;
     --normal-font-size: 1.038rem;
     --small-font-size: .913rem;
     --smaller-font-size: .805rem;
@@ -139,46 +139,47 @@ h3 {
 
 /* Styling button */
 
+
+/* CSS */
+
 .button {
-    align-items: center;
-    appearance: none;
-    background-color: #3EB2FD;
-    background-image: linear-gradient(1deg, var(--title-color), #149BF3 99%);
-    background-size: calc(100% + 20px) calc(100% + 20px);
-    border-radius: 100px;
-    border-width: 0;
-    box-shadow: none;
+    appearance: button;
+    background-color: var(--title-color);
+    border: 1px solid var(--title-color);
+    border-radius: 4px;
     box-sizing: border-box;
-    color: #FFFFFF;
+    color: var(--primary-color-one);
     cursor: pointer;
-    display: inline-flex;
     font-size: var(--small-font-size);
-    height: auto;
-    justify-content: center;
-    line-height: 1.5;
-    padding: 6px 20px;
+    line-height: 1.15;
+    overflow: visible;
+    padding: 8px 12px;
     position: relative;
     text-align: center;
-    text-decoration: none;
-    transition: background-color .2s, background-position .2s;
+    text-transform: none;
+    transition: all 10ms ease-in-out;
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
-    vertical-align: top;
-    white-space: nowrap;
+    width: fit-content;
 }
 
-.button:active,
+.button:disabled {
+    opacity: .5;
+}
+
 .button:focus {
-    outline: none;
+    outline: 0;
 }
 
 .button:hover {
-    background-position: -20px -20px;
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
 }
 
-.button:focus:not(:active) {
-    box-shadow: rgba(40, 170, 255, 0.25) 0 0 0 .125em;
+.button:active {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
 }
 
 
@@ -390,8 +391,8 @@ h3 {
 
 .home__avatar-img {
     display: block;
-    width: 240px;
-    height: 240px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     margin-bottom: var(--m-0-75);
 }
@@ -436,11 +437,11 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 60px;
-    height: 60px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     margin: 10px;
-    font-size: var(--m-2-5);
+    font-size: var(--m-2);
     overflow: hidden;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
@@ -575,21 +576,20 @@ h3 {
 .skills__container {
     grid-template-rows: 1fr;
     grid-template-areas: 'section__header' 'skills__data-container';
+    margin-bottom: var(--m-3);
 }
 
 .skill__data-container {
     grid-area: skills__data-container;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
 }
 
 .skill__card {
     width: 100%;
-    background-color: var(--primary-color-three);
     padding: var(--m-1);
-    margin-bottom: var(--m-2);
+    margin-bottom: var(--m-1);
 }
 
 .skill__card-data {
@@ -689,6 +689,11 @@ h3 {
     width: 50%;
 }
 
+.skill__install,
+.skill__spss {
+    width: 90%;
+}
+
 .skill__close .skills__list {
     height: 0;
     overflow: hidden;
@@ -696,7 +701,6 @@ h3 {
 
 .skills__open .skills__list {
     height: max-content;
-    margin-bottom: var(--m-2);
 }
 
 .skill__details {
@@ -1014,6 +1018,13 @@ h3 {
     .card__header {
         text-align: center;
     }
+    /* Styling skill */
+    .skill__card {
+        width: 50%;
+    }
+    .skills__container {
+        padding-bottom: var(--m-8);
+    }
     /* Styling contact */
     .contact__content {
         width: 100%;
@@ -1036,13 +1047,6 @@ h3 {
         height: 20rem;
     }
     /* ==========style skill =============== */
-    .skill__data-container {
-        flex-direction: row;
-        height: 50vh;
-    }
-    .skill__card {
-        margin: 3rem 10px;
-    }
     .service__card {
         width: 45%;
         margin: var(--m-1);
