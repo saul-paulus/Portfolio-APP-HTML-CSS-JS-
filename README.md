@@ -10,4 +10,4 @@ Sebelum membuat app tersebut, saya mendesain UI dengan menggunakan figma:
 
 App tersebut kemudian saya build dengan menggunakan https://app.netlify.com/ , sehingga app dapat dilihat seperti ini:
 
-https://golden-lollipop-420371.netlify.app/
+https://cerulean-manatee-d82614.netlify.app
